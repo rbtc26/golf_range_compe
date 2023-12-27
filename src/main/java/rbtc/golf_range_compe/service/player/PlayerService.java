@@ -1,4 +1,4 @@
-package rbtc.golf_range_compe.service.Player;
+package rbtc.golf_range_compe.service.player;
 
 import rbtc.golf_range_compe.entity.Player;
 

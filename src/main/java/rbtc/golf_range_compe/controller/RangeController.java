@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import rbtc.golf_range_compe.entity.Range;
 import rbtc.golf_range_compe.model.RoundWinner;
-import rbtc.golf_range_compe.service.Club.RangeService;
-import rbtc.golf_range_compe.service.Competition.CompetitionService;
+import rbtc.golf_range_compe.service.club.RangeService;
+import rbtc.golf_range_compe.service.competition.CompetitionService;
 
 import java.util.List;
 

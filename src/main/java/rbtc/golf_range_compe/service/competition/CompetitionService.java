@@ -1,4 +1,4 @@
-package rbtc.golf_range_compe.service.Competition;
+package rbtc.golf_range_compe.service.competition;
 
 import rbtc.golf_range_compe.entity.Range;
 import rbtc.golf_range_compe.model.RoundWinner;

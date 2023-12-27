@@ -1,9 +1,11 @@
 package rbtc.golf_range_compe.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import rbtc.golf_range_compe.entity.Player;
-import rbtc.golf_range_compe.service.Player.PlayerService;
+import rbtc.golf_range_compe.service.player.PlayerService;
 
 import java.util.List;
 
@@ -20,17 +22,17 @@ public class PlayerController {
     }
 
     @RequestMapping(method = RequestMethod.DELETE)
-    public String removePlayer(@RequestParam Integer id) {
-        return playerService.removePlayer(id);
+    public ResponseEntity<String> removePlayer(@RequestParam Integer id) {
+        return new ResponseEntity<>(playerService.removePlayer(id), HttpStatus.OK);
     }
 
     @RequestMapping(method = RequestMethod.PUT)
-    public Player updatePlayer(@RequestBody Player player) throws Exception {
-        return playerService.updatePlayer(player);
+    public ResponseEntity<Player> updatePlayer(@RequestBody Player player) throws Exception {
+        return new ResponseEntity<>(playerService.updatePlayer(player), HttpStatus.OK);
     }
 
     @RequestMapping(method = RequestMethod.GET)
-    public List<Player> getPlayers() {
-        return playerService.getAllPlayers();
+    public ResponseEntity<List<Player>> getPlayers() {
+        return new ResponseEntity<>(playerService.getAllPlayers(), HttpStatus.OK);
     }
 }

@@ -1,4 +1,4 @@
-package rbtc.golf_range_compe.service.Club;
+package rbtc.golf_range_compe.service.club;
 
 import rbtc.golf_range_compe.entity.Club;
 

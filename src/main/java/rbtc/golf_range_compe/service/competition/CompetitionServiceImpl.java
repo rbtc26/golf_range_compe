@@ -1,4 +1,4 @@
-package rbtc.golf_range_compe.service.Competition;
+package rbtc.golf_range_compe.service.competition;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
